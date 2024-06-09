@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Centered Page</title>
+<title>VIHEO</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -21,9 +21,15 @@
         box-sizing: border-box;
     }
     p {
-        font-size: 1.5rem; /* Using rem units for font size */
-        font-weight: bold;
         color: black;
+    }
+    .founded {
+        font-size: 0.8rem; /* smaller font size for "Founded in 2016..." */
+        color: #555; /* dark grey color */
+    }
+    .construction {
+        font-size: 1.8rem; /* bigger font size for "Under Construction" */
+        font-weight: bold;
     }
     img {
         max-width: 100%; /* Ensuring the image scales properly */
@@ -31,13 +37,19 @@
     }
     /* Media queries for responsiveness */
     @media (max-width: 768px) {
-        p {
-            font-size: 1.2rem;
+        .founded {
+            font-size: 0.7rem;
+        }
+        .construction {
+            font-size: 1.5rem;
         }
     }
     @media (max-width: 480px) {
-        p {
-            font-size: 1rem;
+        .founded {
+            font-size: 0.6rem;
+        }
+        .construction {
+            font-size: 1.2rem;
         }
     }
 </style>
@@ -46,8 +58,8 @@
 
 <div id="content">
     <img src="logo.jpeg" alt="Logo">
-    <p>Founded in 2016, VIHEO is an online marketpalce connecting clients with only the best handpickked video professional firms worldwide for video animation services.</p>
-      <p>Under Construction: We're Rebuilding For You. Stay Tuned!</p>
+    <p class="founded">Founded in 2016, VIHEO is an online marketplace connecting clients with only the best handpicked video professional firms worldwide for video animation services.</p>
+    <p class="construction">Under Construction: We're Rebuilding For You. Stay Tuned!</p>
 </div>
 
 </body>
