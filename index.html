@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    #content {
+        max-width: 80%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    p {
+        font-size: 1.5rem; /* Using rem units for font size */
+        font-weight: bold;
+        color: black;
+    }
+    img {
+        max-width: 100%; /* Ensuring the image scales properly */
+        height: auto;   /* Maintaining the aspect ratio */
+    }
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    @media (max-width: 480px) {
+        p {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div id="content">
+    <img src="VIHEO-logos.jpeg" alt="Logo">
+</div>
+
+</body>
+</html>
